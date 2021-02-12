@@ -1,0 +1,44 @@
+<%- include partials/header.ejs %>
+
+<%- include partials/main_nav.ejs %>
+
+  <main class="container">
+    <div class="jumbotron p-1">
+        <figure class="text-center"><h4 class="display-6"> - <%= title %> - </h4></figure class="text-center">
+    </div>
+  </main>
+
+  <main class="container">
+    <p class="lead">
+        This is my Personal Portfolio Website using ExpressJS and EJS.
+      </p>
+    <dl class="row">
+        <dt class="col-sm-3"><a href="/aboutMe" class="btn btn-primary" role="button" >About Me</a></dt>
+        <dd class="col-sm-9">
+            <p>A short paragraph about who am i.</p>
+            <p>Resume.</p>
+        </dd>
+      
+        <dt class="col-sm-3"><a href="/projects" class="link-primary">Projects</a></dt>
+        <dd class="col-sm-9">
+          <p>Current and past projects</p>
+        </dd>
+      
+        <dt class="col-sm-3"><a href="/services" class="link-primary">Services</a></dt>
+        <dd class="col-sm-9">
+          <p>Services offer</p>
+        </dd>
+      
+        <dt class="col-sm-3"><a href="/contactMe" class="link-primary">Contact Me</a></dt>
+        <dd class="col-sm-9">
+          <p>Call me</p>
+        </dd>
+      </dl>
+  </main>
+
+  <%- include partials/bottom_nav.ejs %>
+
+  <%- include partials/footer.ejs %>
+
+
+

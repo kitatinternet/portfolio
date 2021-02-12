@@ -1,25 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title><%= title %></title>
-  <!-- CSS Section-->
-  <link rel="stylesheet" href='/bootstrap/dist/css/bootstrap.min.css' />
-  <link rel="stylesheet" href="/@fortawesome/fontawesome-free/css/all.min.css">
-  <link rel='stylesheet' href='/Content/app.css' />
+<%- include partials/header.ejs %>
 
-</head>
-<body>
-  <h1>Welcome to the <%= title %></h1>
+<%- include partials/main_nav.ejs %>
 
-  <!-- Script Section-->
-  <script src="/jquery/dist/jquery.min.js"></script>
-  <script src="/bootstrap/dist/js/bootstrap.min.js"></script>
-  <script src="/Scripts/app.js"></script>
-</body>
-</html>
+  <main class="container">
+    <div class="jumbotron p-1">
+      <h4 class="display-6">/<%= title %></h4>
+    </div>
+  </main>
+
+  <%- include partials/bottom_nav.ejs %>
+
+  <%- include partials/footer.ejs %>
 
 
 
