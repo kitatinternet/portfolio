@@ -1,3 +1,11 @@
+/**
+ * @file 
+ * app.js
+ *
+ * Chun Kit Lam, 301158152, 12Feb2021
+ * COMP229–Web Application Development Assignment 1
+ */
+
 //installed 3rd party packages
 let createError = require('http-errors');
 let express = require('express');
@@ -8,7 +16,7 @@ let logger = require('morgan');
 let indexRouter = require('./routes/index');
 
 let homeRouter = require('./routes/home');
-let usersRouter = require('./routes/users');
+//let usersRouter = require('./routes/users');
 
 let app = express();
 
@@ -24,7 +32,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.static(path.join(__dirname, 'node_modules')));
 
 app.use('/', indexRouter);
-app.use('/users', usersRouter);
+//app.use('/users', usersRouter);
 app.use('/home', homeRouter);
 
 // catch 404 and forward to error handler
